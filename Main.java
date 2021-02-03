@@ -23,6 +23,8 @@ class Main {
     //prints first method get age
     System.out.println("Both of your ages added together is " + getAge + ". Wow!");
 
+    //prints second methods get bones
+    System.out.println("Both of your broken bones combined are a total of " + getBones + " broken bones! Hope you don't break any more!");
   }
 
   //method for adding both ages
@@ -31,6 +33,9 @@ class Main {
     return getAge;
   }
 
-  
-
+  //method for adding both bones
+  static int totalBones(int yourBones, int theirBones){
+    int getBones = yourBones + theirBones;
+    return getBones;
+  }
 }
