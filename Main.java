@@ -10,21 +10,19 @@ class Main {
     int yourAge = scan.nextInt();
     System.out.println("How old is your best friend?");
     int theirAge = scan.nextInt();
-    System.out.println("How many bones have you broken?");
-    int yourBones = scan.nextInt();
-    System.out.println("How many bones has your friends broken?");
-    int theirBones = scan.nextInt();
+    System.out.println("What is your name?");
+    String yourName = scan.nextString();
+    System.out.println("What is your best friends name?");
+    String theirName = scan.nextString();
 
     //creates int for the total age
     int getAge = totalAge(yourAge, theirAge);
-    //creates int for the total bones
-    int getBones = totalBones(yourBones, theirBones);
+    
 
     //prints first method get age
     System.out.println("Both of your ages added together is " + getAge + ". Wow!");
 
-    //prints second methods get bones
-    System.out.println("Both of your broken bones combined are a total of " + getBones + " broken bones! Hope you don't break any more!");
+  
   }
 
   //method for adding both ages
@@ -33,9 +31,5 @@ class Main {
     return getAge;
   }
 
-  //method for adding both bones
-  static int totalBones(int yourBones, int theirBones){
-    int getBones = yourBones + theirBones;
-    return getBones;
-  }
+  
 }
