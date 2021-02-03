@@ -13,7 +13,7 @@ class Main {
 
     int getAge = totalAge(yourAge, theirAge);
 
-    
+    System.out.println("Both of your ages added together is " + getAge + ". Wow!");
 
   }
 
